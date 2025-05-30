@@ -1,6 +1,12 @@
-import {Slot} from "expo-router";
+import {Slot, Stack} from "expo-router";
 import React from "react";
 
 export default function Layout() {
-  return <Slot/>;
+  return(
+  <Stack> 
+      <Stack.Screen name="(tabs)" options={{headerShown:false}}/>  
+      
+  </Stack>
+
+);
 }
